@@ -22,6 +22,7 @@ const HeaderMenu = () => {
   return (
     <Container>
       {data?.header.map((v: Header, i: Number) => {
+        console.log(v);
         return (
           <MenuItem
             key={v.id}

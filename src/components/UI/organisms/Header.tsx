@@ -1,16 +1,26 @@
 import classNames from 'classnames';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { LogoIMG } from '../atoms/Logo';
 import AccountBox from '../molecules/AccountBox';
 import HeaderMenu from '../molecules/HeaderMenu';
 
 export default function Header() {
-  const [scrollY, setScrollY] = useState(0);
+  const [scrollY, setScrollY] = useState(false);
 
-  window.addEventListener('scroll', () => {
-    setScrollY(window.scrollY);
-  });
+  const scrollEvent = () => {
+    if(window.scrollY) {
+      setScrollY(true);
+    } else {
+      setScrollY(false);
+    }
+  }
+
+  useEffect(()=>{
+    window.addEventListener('scroll', scrollEvent);
+
+    return () => window.removeEventListener('scroll', scrollEvent);
+  },[]) 
 
   return (
     <Wrapper className={classNames({ scrolling: scrollY })}>
