@@ -17,4 +17,14 @@ const LogoIMG = () => {
   );
 };
 
-export { LogoIMG };
+const Cookie = styled.img`
+  max-width: 5.5rem;
+  height: auto;
+  padding-right: 1rem;
+`;
+
+const CookieIcon = () => {
+  return <Cookie src='/icons/cookie.svg' />;
+};
+
+export { LogoIMG, CookieIcon };

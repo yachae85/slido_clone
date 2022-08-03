@@ -46,4 +46,30 @@ const SignUp = styled(Text)`
   }
 `;
 
-export { MenuItem, Login, SignUp };
+const PopupMainText = styled.div`
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #000;
+  margin-bottom: 1rem;
+`;
+
+const PopupSubText = styled.div`
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #000;
+  margin: 0;
+
+  span {
+    color: #39ac37;
+    cursor: pointer;
+    text-decoration: underline;
+
+    :hover {
+      text-decoration: none;
+    }
+  }
+`;
+
+export { MenuItem, Login, SignUp, PopupMainText, PopupSubText };
