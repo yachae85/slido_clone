@@ -10,7 +10,7 @@ export default function CookiePopup() {
 
   const initialVisibleValue = () => {
     const temp = window.localStorage.getItem('cookie-popup');
-    const value: boolean = JSON.parse(temp ? temp : 'true');
+    const value: boolean = JSON.parse(temp ?? 'true');
 
     if (value) {
       setVisible(value);
