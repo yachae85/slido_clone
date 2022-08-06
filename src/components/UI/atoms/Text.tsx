@@ -72,4 +72,13 @@ const PopupSubText = styled.div`
   }
 `;
 
-export { MenuItem, Login, SignUp, PopupMainText, PopupSubText };
+const SearchText = styled.div`
+  white-space: nowrap;
+  line-height: 24px;
+  font-size: 20px;
+  color: #fff !important;
+  font-weight: 400;
+  text-align: center;
+`;
+
+export { MenuItem, Login, SignUp, PopupMainText, PopupSubText, SearchText };

@@ -23,8 +23,32 @@ const Cookie = styled.img`
   padding-right: 1rem;
 `;
 
+const Img = styled.img`
+  cursor: pointer;
+`;
+
 const CookieIcon = () => {
   return <Cookie src='/icons/cookie.svg' />;
 };
 
-export { LogoIMG, CookieIcon };
+const QuestionIcon = () => {
+  return <Img src='/icons/ic_question.svg' />;
+};
+
+const SearchIcon = () => {
+  return <img alt='search' src='/icons/feature/ic_search.svg' />;
+};
+
+const PrevIcon = () => {
+  return <Img src='/icons/feature/ic_prev.svg' />;
+};
+
+interface CloseIconProps {
+  onClick: () => void;
+}
+
+const CloseIcon = (props: CloseIconProps) => {
+  return <Img onClick={props.onClick} src='icons/feature/ic_close.svg' />;
+};
+
+export { LogoIMG, CookieIcon, QuestionIcon, SearchIcon, PrevIcon, CloseIcon };

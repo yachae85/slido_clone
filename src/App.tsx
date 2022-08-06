@@ -4,6 +4,7 @@ import { Reset } from 'styled-reset';
 import GlobalStyle from './GlobalStyle';
 import Header from './components/UI/organisms/Header';
 import CookiePopup from './components/UI/organisms/CookiePopup';
+import QuestionPopup from './components/UI/organisms/QuestionPopup';
 
 const App = () => (
   <React.Fragment>
@@ -11,6 +12,7 @@ const App = () => (
     <GlobalStyle />
     <Header />
     <CookiePopup />
+    <QuestionPopup />
   </React.Fragment>
 );
 
