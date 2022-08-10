@@ -1,19 +1,13 @@
 import styled from 'styled-components';
 import useSWR from 'swr';
 import mockFetcher from '../../../fetcher/mockFetcher';
-import { MenuItem } from '../atoms/Text';
-
-interface SubCategories {
-  id: number;
-  name: string;
-  description: string;
-  icon: string;
-}
+import { SubCategory } from '../../types/types';
+import { HeaderMenuItem } from './HeaderMenuItem';
 
 interface Header {
   id: number;
   name: string;
-  subCategories: SubCategories[];
+  subCategories: SubCategory[];
 }
 
 const HeaderMenu = () => {
@@ -24,13 +18,13 @@ const HeaderMenu = () => {
       {data?.header.map((v: Header, i: Number) => {
         console.log(v);
         return (
-          <MenuItem
+          <HeaderMenuItem
             key={v.id}
             marginLeft={i !== 0}
             hoverEffect={!v.subCategories.length}
-          >
-            {v.name}
-          </MenuItem>
+            subCategories={v.subCategories}
+            title={v.name}
+          />
         );
       })}
     </Container>

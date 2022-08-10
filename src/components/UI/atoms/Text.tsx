@@ -22,6 +22,7 @@ const Text = styled.div`
 `;
 
 const MenuItem = styled(Text)`
+  position: relative;
   margin-left: ${(props: MenuItemProps) => (props.marginLeft ? '2rem' : '0px')};
 `;
 
@@ -81,4 +82,21 @@ const SearchText = styled.div`
   text-align: center;
 `;
 
-export { MenuItem, Login, SignUp, PopupMainText, PopupSubText, SearchText };
+const SubText = styled.div`
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  white-space: nowrap;
+
+  cursor: pointer;
+`;
+
+export {
+  MenuItem,
+  Login,
+  SignUp,
+  PopupMainText,
+  PopupSubText,
+  SearchText,
+  SubText,
+};
