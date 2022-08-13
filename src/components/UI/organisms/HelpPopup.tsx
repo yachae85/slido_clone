@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { HelpPopupMain } from './HelpPopupMain';
+import { HelpPopupMain } from '../molecules/HelpPopupMain';
 import { HelpPopupFooter } from '../molecules/HelpPopupFooter';
 
 interface HelpPopupProps {

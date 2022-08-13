@@ -1,32 +1,33 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 import { SubCategory } from '../../types/types';
 import { SubText } from '../atoms/Text';
 
 interface SubCategoriesProps {
-  display: boolean;
   subCategories: SubCategory[];
 }
 
 export const SubCategories = (props: SubCategoriesProps) => {
-  const { display, subCategories } = props;
+  const { subCategories } = props;
+  const [hoverIndex, setHoverIndex] = useState(0);
+
+  const onMouseEnter = (index: number) => {
+    setHoverIndex(index);
+  }
 
   return (
-    <Container display={display}>
+    <Container >
       <SubContainer>
-        {subCategories.map((v) => {
-          return <SubText key={v.id}>{v.name}</SubText>;
+        {subCategories.map((v, i) => {
+          return <SubText key={v.id} onMouseEnter={onMouseEnter.bind(this, i)} hover={hoverIndex === i}>{v.name}</SubText>;
         })}
       </SubContainer>
     </Container>
   );
 };
 
-interface ContainerProps {
-  display: boolean;
-}
-
 const Container = styled.div`
-  display: ${(props: ContainerProps) => (props.display ? 'flex' : 'none')};
+  display: flex;
   flex-direction: row;
 
   position: absolute;

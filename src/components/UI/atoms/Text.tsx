@@ -23,6 +23,8 @@ const Text = styled.div`
 
 const MenuItem = styled(Text)`
   position: relative;
+  padding: 0.5rem 0;
+  line-height: 1.5rem;
   margin-left: ${(props: MenuItemProps) => (props.marginLeft ? '2rem' : '0px')};
 `;
 
@@ -82,6 +84,10 @@ const SearchText = styled.div`
   text-align: center;
 `;
 
+interface SubTextProps {
+  hover: boolean;
+}
+
 const SubText = styled.div`
   padding: 0.75rem 2rem;
   font-size: 1rem;
@@ -89,6 +95,8 @@ const SubText = styled.div`
   white-space: nowrap;
 
   cursor: pointer;
+
+  background: ${(props: SubTextProps) => props.hover ? '#f5f5f5' : 'none'};
 `;
 
 export {

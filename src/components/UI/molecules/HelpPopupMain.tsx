@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { HelpPopupHeader } from '../molecules/HelpPopupHeader';
+import { HelpPopupHeader } from './HelpPopupHeader';
 
 interface HelpPopupMainProps {
   setVisibility: (visible: boolean) => void;

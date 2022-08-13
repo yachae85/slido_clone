@@ -34,9 +34,8 @@ export const HeaderMenuItem = (props: HeaderMenuItemProps) => {
       onMouseLeave={onMouseLeaveEvent}
     >
       {title}
-      {subCategories.length && (
+      {showSubCategories && (
         <SubCategories
-          display={showSubCategories}
           subCategories={subCategories}
         />
       )}
