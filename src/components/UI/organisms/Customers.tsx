@@ -30,7 +30,6 @@ const Container = styled.div`
   margin-right: auto;
   padding: 3.5rem 2rem;
   width: 100%;
-  max-width: 80rem;
 
   background-color: #f5f5f5;
 `;
@@ -43,4 +42,5 @@ const ListWrapper = styled.div`
   margin: 0 auto;
   padding: 0 1rem;
   width: 100%;
+  max-width: 80rem;
 `;
