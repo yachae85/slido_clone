@@ -110,11 +110,11 @@ export const JoinText = styled.span`
 `;
 
 interface EventDescribeProps {
-  display: boolean;
+  inputString: string;
 }
 
 export const EventDescribe = styled.p`
-  opacity: ${(props: EventDescribeProps) => (props.display ? 1 : 0)};
+  opacity: ${(props: EventDescribeProps) => (props.inputString === '' ? 1 : 0)};
 
   position: absolute;
   top: 50%;
@@ -199,4 +199,12 @@ export const DemoButton = styled.a`
   :hover {
     text-decoration: none;
   }
+`;
+
+export const UtilLogoTitle = styled.h2`
+  margin-bottom: 2rem;
+
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2rem;
 `;
