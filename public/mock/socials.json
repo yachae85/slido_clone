@@ -1,0 +1,9 @@
+{
+  "result": [
+    { "id": 1, "icon": "/icons/socials/ic_facebook.svg" },
+    { "id": 2, "icon": "/icons/socials/ic_twitter.svg" },
+    { "id": 3, "icon": "/icons/socials/ic_linkedin.svg" },
+    { "id": 4, "icon": "/icons/socials/ic_instagram.svg" },
+    { "id": 5, "icon": "/icons/socials/ic_youtube.svg" }
+  ]
+}

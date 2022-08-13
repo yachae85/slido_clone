@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 import { FooterLinks } from '../molecules/FooterLinks';
+import { FooterSocials } from '../molecules/FooterSocials';
 
 export default function Footer() {
   return (
     <Container>
       <FooterLinks />
+      <FooterSocials />
     </Container>
   );
 }

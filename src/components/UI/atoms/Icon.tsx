@@ -80,8 +80,11 @@ export const SearchFormIcon = styled.img`
 
 interface IconProps {
   src: string;
+  marginLeft?: string;
 }
 
-export const Icon = ({ src }: IconProps) => {
-  return <img alt={src} src={src} />;
+export const Icon = ({ src, marginLeft }: IconProps) => {
+  return (
+    <img alt={src} src={src} style={{ marginLeft: marginLeft ?? '0px' }} />
+  );
 };
