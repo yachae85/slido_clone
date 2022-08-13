@@ -51,4 +51,25 @@ const CloseIcon = (props: CloseIconProps) => {
   return <Img onClick={props.onClick} src='icons/feature/ic_close.svg' />;
 };
 
-export { LogoIMG, CookieIcon, QuestionIcon, SearchIcon, PrevIcon, CloseIcon };
+const SubCategoryImg = styled.img`
+  background-color: #eff9ef;
+  border-radius: 100%;
+`;
+
+interface SubCategoryIconProps {
+  src: string;
+}
+
+const SubCategoryIcon = (props: SubCategoryIconProps) => {
+  return <SubCategoryImg src={props.src} />;
+};
+
+export {
+  LogoIMG,
+  CookieIcon,
+  QuestionIcon,
+  SearchIcon,
+  PrevIcon,
+  CloseIcon,
+  SubCategoryIcon,
+};

@@ -96,7 +96,7 @@ const SubText = styled.div`
 
   cursor: pointer;
 
-  background: ${(props: SubTextProps) => props.hover ? '#f5f5f5' : 'none'};
+  background: ${(props: SubTextProps) => (props.hover ? '#f5f5f5' : 'none')};
 `;
 
 export {
