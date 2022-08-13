@@ -1,10 +1,12 @@
 import styled from 'styled-components';
+import MainHeader from '../UI/organisms/MainHeader';
 import { SearchForm } from '../UI/organisms/SearchForm';
 
 export default function Main() {
   return (
     <Container>
       <SearchForm />
+      <MainHeader />
     </Container>
   );
 }

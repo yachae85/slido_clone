@@ -139,3 +139,64 @@ export const EventDescribe = styled.p`
     cursor: pointer;
   }
 `;
+
+export const HeaderTitle = styled.h1`
+  margin-top: 0.5rem;
+
+  font-size: 4rem;
+  line-height: 4.5rem;
+  font-weight: 700;
+`;
+
+export const HeaderSubTitle = styled.p`
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+
+  font-size: 1.25rem;
+  line-height: 2rem;
+`;
+
+export const FreeButton = styled.a`
+  display: inline-block;
+  margin: 0.75rem 1rem;
+  padding: 0.9375rem 2rem;
+  width: auto;
+
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background: #39ac37;
+
+  border: 0.0625rem solid #39ac37;
+  border-radius: 0.25rem;
+
+  cursor: pointer;
+  :hover {
+    background-color: #000;
+    border-color: #000;
+  }
+`;
+
+export const DemoButton = styled.a`
+  display: inline-block;
+  margin: 0.75rem 1rem;
+  padding: 0;
+  width: auto;
+
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background: transparent;
+  color: #39ac37;
+  text-decoration: underline;
+
+  border: none;
+
+  cursor: pointer;
+  :hover {
+    text-decoration: none;
+  }
+`;
