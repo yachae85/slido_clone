@@ -221,3 +221,20 @@ export const GreeTitle = styled.h2`
   line-height: 3.5rem;
   font-weight: 700;
 `;
+
+export const MoreText = styled.a`
+  padding: 0;
+  width: auto;
+
+  color: #39ac37;
+  font-weight: 700;
+  text-decoration: underline;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+  :hover {
+    text-decoration: none;
+  }
+`;

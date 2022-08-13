@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import { SubCategory } from '../../types/types';
 import { SubCategoryIcon } from '../atoms/Icon';
-import { SubText } from '../atoms/Text';
+import { MoreText, SubText } from '../atoms/Text';
 
 interface SubCategoriesProps {
   subCategories: SubCategory[];
@@ -97,19 +97,4 @@ const Description = styled.p`
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-`;
-
-const MoreText = styled.a`
-  font-weight: 700;
-  padding: 0;
-  border: none;
-  background: transparent;
-  color: #39ac37;
-  text-decoration: underline;
-  width: auto;
-  cursor: pointer;
-
-  :hover {
-    text-decoration: none;
-  }
 `;

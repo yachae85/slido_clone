@@ -7,6 +7,7 @@ import Cards from '../UI/organisms/Cards';
 import Badegs from '../UI/organisms/Badges';
 import Customers from '../UI/organisms/Customers';
 import GreenPlace from '../UI/organisms/GreenPlace';
+import Posts from '../UI/organisms/Posts';
 
 export default function Main() {
   return (
@@ -19,6 +20,7 @@ export default function Main() {
       <Badegs />
       <Customers />
       <GreenPlace />
+      <Posts />
     </Container>
   );
 }
