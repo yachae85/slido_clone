@@ -13,15 +13,17 @@ export default function ModalVideo(props: ModalVideoProps) {
   return createPortal(
     <Container display={display} onClick={onClose}>
       <SubContainer>
-        <Iframe
-          width='944'
-          height='531'
-          src='https://www.youtube.com/embed/TqZHb67kPTs'
-          title='YouTube video player'
-          frameBorder='0'
-          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-          allowFullScreen
-        ></Iframe>
+        {display && (
+          <Iframe
+            width='944'
+            height='531'
+            src='https://www.youtube.com/embed/TqZHb67kPTs'
+            title='YouTube video player'
+            frameBorder='0'
+            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+            allowFullScreen
+          ></Iframe>
+        )}
         <ModalClose src='/icons/feature/ic_close.svg' onClick={onClose} />
       </SubContainer>
     </Container>,
