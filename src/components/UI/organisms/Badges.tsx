@@ -15,7 +15,7 @@ export default function Badegs() {
   return (
     <Container>
       {data?.result.map((v: Badge) => {
-        return <Icon src={v.badge} />;
+        return <Icon key={v.id} src={v.badge} />;
       })}
     </Container>
   );

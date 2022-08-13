@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { HeaderSubTitle, HeaderTitle } from '../atoms/Text';
-import { HeaderVider } from '../molecules/HeaderVider';
+import { HeaderVideo } from '../molecules/HeaderVideo';
 import { SubscribeFrom } from '../molecules/SubscribeForm';
 
 export default function MainHeader() {
@@ -14,7 +14,7 @@ export default function MainHeader() {
         <br />— whether you meet in the office, online or in-between.
       </HeaderSubTitle>
       <SubscribeFrom />
-      <HeaderVider />
+      <HeaderVideo />
     </Container>
   );
 }

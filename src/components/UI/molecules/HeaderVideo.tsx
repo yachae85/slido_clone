@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const HeaderVider = () => {
+export const HeaderVideo = () => {
   return (
     <Container>
       <video
@@ -10,6 +10,7 @@ export const HeaderVider = () => {
         playsInline
         width='100%'
         height='100%'
+        muted
       ></video>
     </Container>
   );
