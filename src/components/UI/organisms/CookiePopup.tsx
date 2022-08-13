@@ -54,6 +54,9 @@ const Container = styled.div`
   padding: 2rem;
   box-shadow: 0 0.25rem 0.7rem rgb(0 0 0 / 10%);
   border-radius: 0.25rem;
+
+  background-color: #fff;
+  z-index: 999999;
 `;
 
 const TextContainer = styled.div`
