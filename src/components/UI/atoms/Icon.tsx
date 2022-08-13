@@ -9,7 +9,7 @@ const Container = styled.div`
   flex: 1;
 `;
 
-const LogoIMG = () => {
+export const LogoIMG = () => {
   return (
     <Container>
       <Logo src='/icons/ic_logo.svg' />
@@ -27,19 +27,19 @@ const Img = styled.img`
   cursor: pointer;
 `;
 
-const CookieIcon = () => {
+export const CookieIcon = () => {
   return <Cookie src='/icons/cookie.svg' />;
 };
 
-const QuestionIcon = () => {
+export const QuestionIcon = () => {
   return <Img src='/icons/ic_question.svg' />;
 };
 
-const SearchIcon = () => {
+export const SearchIcon = () => {
   return <img alt='search' src='/icons/feature/ic_search.svg' />;
 };
 
-const PrevIcon = () => {
+export const PrevIcon = () => {
   return <Img src='/icons/feature/ic_prev.svg' />;
 };
 
@@ -47,7 +47,7 @@ interface CloseIconProps {
   onClick: () => void;
 }
 
-const CloseIcon = (props: CloseIconProps) => {
+export const CloseIcon = (props: CloseIconProps) => {
   return <Img onClick={props.onClick} src='icons/feature/ic_close.svg' />;
 };
 
@@ -60,16 +60,20 @@ interface SubCategoryIconProps {
   src: string;
 }
 
-const SubCategoryIcon = (props: SubCategoryIconProps) => {
+export const SubCategoryIcon = (props: SubCategoryIconProps) => {
   return <SubCategoryImg src={props.src} />;
 };
 
-export {
-  LogoIMG,
-  CookieIcon,
-  QuestionIcon,
-  SearchIcon,
-  PrevIcon,
-  CloseIcon,
-  SubCategoryIcon,
-};
+export const SearchFormIcon = styled.img`
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &.hash {
+    left: 1rem;
+  }
+
+  &.next {
+    right: 0.5rem;
+  }
+`;

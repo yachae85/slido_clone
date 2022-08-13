@@ -5,6 +5,7 @@ import GlobalStyle from './GlobalStyle';
 import Header from './components/UI/organisms/Header';
 import CookiePopup from './components/UI/organisms/CookiePopup';
 import QuestionPopup from './components/UI/organisms/QuestionPopup';
+import Main from './components/pages/Main';
 
 const App = () => (
   <React.Fragment>
@@ -13,6 +14,7 @@ const App = () => (
     <Header />
     <CookiePopup />
     <QuestionPopup />
+    <Main />
   </React.Fragment>
 );
 
