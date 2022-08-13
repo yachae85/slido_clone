@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { FooterLegal } from '../molecules/FooterLegal';
 import { FooterLinks } from '../molecules/FooterLinks';
 import { FooterSocials } from '../molecules/FooterSocials';
 
@@ -7,6 +8,7 @@ export default function Footer() {
     <Container>
       <FooterLinks />
       <FooterSocials />
+      <FooterLegal />
     </Container>
   );
 }
