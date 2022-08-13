@@ -4,7 +4,7 @@ import { SearchFormIcon } from '../atoms/Icon';
 import { SearchInput } from '../atoms/Input';
 import { EventDescribe, JoinText } from '../atoms/Text';
 
-export const SearchForm = () => {
+export default function SearchForm() {
   const [value, setValue] = useState('');
 
   const onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -19,7 +19,7 @@ export const SearchForm = () => {
         <SearchInput
           placeholder='Enter code here'
           value={value}
-          onChange={onInputChange.bind(this)}
+          onChange={(e) => onInputChange(e)}
         />
         <SearchFormIcon className='next' src='/icons/ic_next.svg' />
       </InputContainer>
@@ -28,7 +28,7 @@ export const SearchForm = () => {
       </EventDescribe>
     </Container>
   );
-};
+}
 
 const Container = styled.div`
   position: relative;
