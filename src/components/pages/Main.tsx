@@ -6,6 +6,7 @@ import MiddleBox from '../UI/organisms/MiddleBox';
 import Cards from '../UI/organisms/Cards';
 import Badegs from '../UI/organisms/Badges';
 import Customers from '../UI/organisms/Customers';
+import GreenPlace from '../UI/organisms/GreenPlace';
 
 export default function Main() {
   return (
@@ -17,6 +18,7 @@ export default function Main() {
       <Cards />
       <Badegs />
       <Customers />
+      <GreenPlace />
     </Container>
   );
 }

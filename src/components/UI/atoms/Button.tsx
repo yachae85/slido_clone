@@ -53,3 +53,29 @@ export const HelpPopupFooterButton = styled.button`
     text-decoration: underline;
   }
 `;
+
+export const TryButton = styled.a`
+  margin-top: 1rem;
+  padding: 0.9375rem 2rem;
+  width: auto;
+
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #39ac37;
+  border-color: #fff;
+  background: #fff;
+
+  cursor: pointer;
+  :hover {
+    color: #fff;
+
+    background-color: #000;
+    border-color: #000;
+  }
+`;

@@ -208,3 +208,16 @@ export const UtilLogoTitle = styled.h2`
   font-size: 1.25rem;
   line-height: 2rem;
 `;
+
+export const GreeTitle = styled.h2`
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 50rem;
+
+  color: #fff;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  font-weight: 700;
+`;
