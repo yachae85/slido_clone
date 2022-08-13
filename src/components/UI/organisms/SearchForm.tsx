@@ -24,7 +24,7 @@ export const SearchForm = () => {
         <SearchFormIcon className='next' src='/icons/ic_next.svg' />
       </InputContainer>
       <EventDescribe display={value !== ''}>
-        By using Slido you accept our <a>Policy.</a>
+        By using Slido you accept our <a href='/'>Policy.</a>
       </EventDescribe>
     </Container>
   );
