@@ -8,6 +8,7 @@ import Badegs from '../UI/organisms/Badges';
 import Customers from '../UI/organisms/Customers';
 import GreenPlace from '../UI/organisms/GreenPlace';
 import Posts from '../UI/organisms/Posts';
+import WhatIsSlido from '../UI/organisms/WhatIsSlido';
 
 export default function Main() {
   return (
@@ -15,6 +16,7 @@ export default function Main() {
       <SearchForm />
       <MainHeader />
       <Utils />
+      <WhatIsSlido />
       <MiddleBox />
       <Cards />
       <Badegs />
