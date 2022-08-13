@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import MainHeader from '../UI/organisms/MainHeader';
 import SearchForm from '../UI/organisms/SearchForm';
+import MainHeader from '../UI/organisms/MainHeader';
 import Utils from '../UI/organisms/Utils';
 
 export default function Main() {

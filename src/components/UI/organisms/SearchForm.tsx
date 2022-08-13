@@ -23,7 +23,7 @@ export default function SearchForm() {
         />
         <SearchFormIcon className='next' src='/icons/ic_next.svg' />
       </InputContainer>
-      <EventDescribe display={value !== ''}>
+      <EventDescribe inputString={value}>
         By using Slido you accept our <a href='/'>Policy.</a>
       </EventDescribe>
     </Container>

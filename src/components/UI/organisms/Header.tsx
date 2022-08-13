@@ -40,6 +40,8 @@ const Wrapper = styled.div`
   left: 0;
   background-color: #fff;
 
+  z-index: 99999;
+
   &.scrolling {
     box-shadow: 0 0.125rem 0.125rem rgb(0 0 0 / 10%);
   }
