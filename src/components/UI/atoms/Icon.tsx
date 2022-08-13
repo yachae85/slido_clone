@@ -77,3 +77,11 @@ export const SearchFormIcon = styled.img`
     right: 0.5rem;
   }
 `;
+
+interface IconProps {
+  src: string;
+}
+
+export const Icon = ({ src }: IconProps) => {
+  return <img alt={src} src={src} />;
+};
