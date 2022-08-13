@@ -114,7 +114,7 @@ interface EventDescribeProps {
 }
 
 export const EventDescribe = styled.p`
-  opacity: ${(props: EventDescribeProps) => (props.inputString === '' ? 1 : 0)};
+  opacity: ${(props: EventDescribeProps) => (props.inputString === '' ? 0 : 1)};
 
   position: absolute;
   top: 50%;
