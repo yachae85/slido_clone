@@ -36,6 +36,9 @@ export default function Header() {
 const Wrapper = styled.div`
   width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
 
   &.scrolling {
     box-shadow: 0 0.125rem 0.125rem rgb(0 0 0 / 10%);
