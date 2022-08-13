@@ -3,6 +3,7 @@ import SearchForm from '../UI/organisms/SearchForm';
 import MainHeader from '../UI/organisms/MainHeader';
 import Utils from '../UI/organisms/Utils';
 import MiddleBox from '../UI/organisms/MiddleBox';
+import Cards from '../UI/organisms/Cards';
 
 export default function Main() {
   return (
@@ -11,6 +12,7 @@ export default function Main() {
       <MainHeader />
       <Utils />
       <MiddleBox />
+      <Cards />
     </Container>
   );
 }
