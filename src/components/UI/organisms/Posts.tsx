@@ -20,7 +20,12 @@ export default function Posts() {
         <PostWrapper>
           {data?.result.map((v: PostType) => {
             return (
-              <Post title={v.title} href={v.href} thumbnail={v.thumbnail} />
+              <Post
+                key={v.id}
+                title={v.title}
+                href={v.href}
+                thumbnail={v.thumbnail}
+              />
             );
           })}
         </PostWrapper>

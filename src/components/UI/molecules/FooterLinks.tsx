@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import useSWR from 'swr';
 import mockFetcher from '../../../fetcher/mockFetcher';
 import { SubCategory } from '../../types/types';
-import { LogoIMG } from '../atoms/Icon';
 import { FooterLink } from './FooterLink';
 
 interface Footer {
@@ -19,8 +18,8 @@ export const FooterLinks = () => {
       <Icon src='/icons/ic_logo.svg' />
       {data?.footer.map((v: Footer) => {
         return (
-          <CategoryWrapper>
-            <FooterLink key={v.id} isStrong={true} title={v.name} />
+          <CategoryWrapper key={v.id}>
+            <FooterLink isStrong={true} title={v.name} />
             {v.subCategories.map((v: SubCategory) => {
               return <FooterLink key={v.id} isStrong={false} title={v.name} />;
             })}

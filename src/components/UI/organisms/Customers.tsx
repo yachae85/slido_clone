@@ -16,8 +16,7 @@ export default function Customers() {
     <Container>
       <ListWrapper>
         {data?.customerList.map((v: Customer) => {
-          console.log(v);
-          return <Icon src={v.companyLogo} />;
+          return <Icon key={v.id} src={v.companyLogo} />;
         })}
       </ListWrapper>
     </Container>
