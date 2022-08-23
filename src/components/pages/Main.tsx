@@ -10,6 +10,7 @@ import GreenPlace from '../UI/organisms/GreenPlace';
 import Posts from '../UI/organisms/Posts';
 import WhatIsSlido from '../UI/organisms/WhatIsSlido';
 import Slider from '../UI/organisms/Slider';
+import MainFeatures from '../UI/organisms/MainFeatures';
 
 export default function Main() {
   return (
@@ -19,6 +20,7 @@ export default function Main() {
       <Utils />
       <WhatIsSlido />
       <MiddleBox />
+      <MainFeatures />
       <Cards />
       <Badegs />
       <Slider />
