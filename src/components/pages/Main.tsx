@@ -9,6 +9,7 @@ import Customers from '../UI/organisms/Customers';
 import GreenPlace from '../UI/organisms/GreenPlace';
 import Posts from '../UI/organisms/Posts';
 import WhatIsSlido from '../UI/organisms/WhatIsSlido';
+import Slider from '../UI/organisms/Slider';
 
 export default function Main() {
   return (
@@ -20,6 +21,7 @@ export default function Main() {
       <MiddleBox />
       <Cards />
       <Badegs />
+      <Slider />
       <Customers />
       <GreenPlace />
       <Posts />
